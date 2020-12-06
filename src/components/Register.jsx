@@ -42,7 +42,7 @@ const RegisterComponent = (props) => {
 
 
     return (
-        <div id="registerForm">
+        <div id="wrapper">
             <Form onSubmit={handleUserRegistration}>
                 <h3>Registration</h3>
                 <FormGroup>
