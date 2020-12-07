@@ -18,13 +18,15 @@ function Tabs() {
         <li className="nav-item">
           <Link
             to="/library"
-            className={window.location.pathname === "/library" ? "nav-link active" : "nav-link"}
-          >
+            className={window.location.pathname === "/library" ? "nav-link active" : "nav-link"}>
             Library
           </Link>
         </li>
         <Link to="/Notes" className={window.location.pathname === "/notes" ? "nav-link active" : "nav-link"}>
             Notes
+          </Link>
+        <Link to="/Register" className={window.location.pathname === "/register" ? "nav-link active" : "nav-link"}>
+            Login / Register
           </Link>
       </ul>
       </div>

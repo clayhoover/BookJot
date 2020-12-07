@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button, Input, FormGroup, Label } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 
 
@@ -58,7 +59,10 @@ const RegisterComponent = (props) => {
                     <Input id="registerConfirmPassword" type="password" name="registerConfirmPassword" onChange={triggerPasswordConfirmInputChange} value={passwordConfirm} />
                 </FormGroup>
                 <Button>Register</Button>
-            </Form>
+                <Link to="/login" className={window.location.pathname === "/login" ? "nav-link active" : "nav-link"} style={{ marginLeft: "9rem", display:"inline" }} >Login
+                </Link>
+                <p className="accountalready">Aleardy have an account?</p>
+                </Form>
         </div>
     );
 };

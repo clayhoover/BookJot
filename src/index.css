@@ -14,7 +14,6 @@ body {
 header {
   background-color: #411f1f;
   margin: auto -16px;
-  text-align: center;    /*!!!!*/
   padding: 5px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
@@ -24,6 +23,9 @@ header h1 {
   font-family: "McLaren", cursive;
   font-weight: 200;
   font-size: 40px;
+  text-align: center;
+  display: inline;
+  margin-right: 1rem;
 }
 
 footer {
@@ -75,14 +77,33 @@ footer p {
 
 .form-group2 {
   position: relative;
-  margin-top: 3rem;
-  margin-left: 50rem;
-  margin-right: auto;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  margin: 2rem 50rem;
 }
 
 .img-container {
   text-align: center;
+}
+
+.icon {
+  color: #fff;
+  display: inline;
+}
+.icon2 {
+  color: #8f384d;
+  position: absolute;
+  margin-left: -20rem;
+}
+
+.accountalready {
+  text-align: right;
+  margin-right: 3rem;
+  margin-top: 0.5rem;
+}
+
+.loginlink {
+  margin-left: 9.5rem;
 }

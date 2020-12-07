@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Label, FormGroup, Button, Input } from 'reactstrap'; 
+import { Link } from "react-router-dom";
 
 
 const LoginComponent = (props) => {
@@ -52,6 +53,9 @@ const LoginComponent = (props) => {
          <Button>
              Login
          </Button>
+         <Link to="/register" className={window.location.pathname === "/register" ? "nav-link active" : "nav-link"} style={{ marginLeft: "9rem", display:"inline" }} >Register
+                </Link>
+                <p className="accountalready">Need an account? Register here</p>
          </div>
      </Form>
     );
