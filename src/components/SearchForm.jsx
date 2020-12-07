@@ -5,7 +5,7 @@ import '../App.css';
 function SearchForm(props) {
     return (
       <Form inline>
-          <div className="form-group my-5">
+          <div className="form-group2">
             <label htmlFor="search"></label>
             <input
                 onChange={props.handleInputChange}

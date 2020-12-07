@@ -20,7 +20,7 @@ const LoginComponent = (props) => {
     const handleLoginSubmit = (event) => {
         event.preventDefault();
         if (email && password) {
-            fetch('http://localhots:8080/user/login', {
+            fetch('http://localhost:9001/user/login', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

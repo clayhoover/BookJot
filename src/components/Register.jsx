@@ -18,11 +18,11 @@ const RegisterComponent = (props) => {
         event.preventDefault();
         if (email && password) {
             if (password === passwordConfirm) {
-                fetch('http://localhost:9001/users/register', {
+                fetch('http://localhost:9001/user/register', {
                     method: "POST",
-                    headers: {
+                    headers: new Headers({
                         "Content-Type": "application/json"
-                    },
+                    }),
                     body: JSON.stringify({
                         email: email,
                         password: password

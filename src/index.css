@@ -57,3 +57,32 @@ footer p {
   word-wrap: break-word;
 }
 
+.customButton {
+  background-color: #8f384d;
+  text-decoration-color: #fff;
+  border-radius: 5px;
+  display: inline-flex;
+  margin-bottom: 10px;
+  margin-right: 1rem;
+}
+.customButton2 {
+  background-color: #5c6e91;
+  text-decoration-color: #fff;
+  border-radius: 5px;
+  display: inline;
+  margin-bottom: 10px;
+}
+
+.form-group2 {
+  position: relative;
+  margin-top: 3rem;
+  margin-left: 50rem;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-container {
+  text-align: center;
+}
